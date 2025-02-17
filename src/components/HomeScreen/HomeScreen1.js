@@ -82,7 +82,7 @@ export default () => (
       <Slider {...settings1} className="trusted-by-slider">
         {data &&
           data.allWpCpt49 &&
-          data.allWpCpt49.edges.map(prop => {
+          data.allWpCpt49.edges.map((prop, i) => {
             return (
               <div className="slider-data">
                 <Image
@@ -106,33 +106,41 @@ export default () => (
                           {prop.node.acf.title4}
                         </h3>
                         {/* <h3 className="font-bold color-abf"></h3> */}
-                        <div className="d-lg-inline d-none">
-                          <Link
-                            to="/contact#contact3"
-                            className="button white font-16 font-semibold"
-                          >
-                            know more
-                            <FaAngleRight className="ml-2" />
-                          </Link>
-                        </div>
-                        <div className="d-none d-sm-block d-lg-none">
-                          <Link
-                            to="/contact#contactnew3"
-                            className="button white font-16 font-semibold"
-                          >
-                            know more
-                            <FaAngleRight className="ml-2" />
-                          </Link>
-                        </div>
-                        <div className="d-block d-sm-none">
-                          <Link
-                            to="/contact#contactnewnew3"
-                            className="button white font-16 font-semibold"
-                          >
-                            know more
-                            <FaAngleRight className="ml-2" />
-                          </Link>
-                        </div>
+                        
+                        {i > 0 ? (
+                          <>
+                            <div className="d-lg-inline d-none">
+                              <Link
+                                to="/contact#contact3"
+                                className="button white font-16 font-semibold nav-link"
+                              >
+                                know more
+                                <FaAngleRight className="ml-2" />
+                              </Link>
+                            </div>
+                            <div className="d-none d-sm-block d-lg-none">
+                              <Link
+                                to="/contact#contactnew3"
+                                className="button white font-16 font-semibold nav-link"
+                              >
+                                know more
+                                <FaAngleRight className="ml-2" />
+                              </Link>
+                            </div>
+                            <div className="d-block d-sm-none">
+                              <Link
+                                to="/contact#contactnewnew3"
+                                className="button white font-16 font-semibold nav-link"
+                              >
+                                know more
+                                <FaAngleRight className="ml-2" />
+                              </Link>
+                            </div>
+                          </>
+                        ) : (
+                          <></>
+                        )}
+                        
                       </Col>
                     </Row>
                   </Container>
