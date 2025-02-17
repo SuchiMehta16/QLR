@@ -23,7 +23,8 @@ export default () => (
         {data &&
           data.allWpCpt133 &&
           data.allWpCpt133.edges &&
-          data.allWpCpt133.edges.map(prop => {
+          data.allWpCpt133.edges.node &&
+          data.allWpCpt133.edges.node.map(prop => {
             return (
               <>
                 <Row className="justify-content-center">
