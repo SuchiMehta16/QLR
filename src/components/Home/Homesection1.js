@@ -9,7 +9,7 @@ import {
   ListGroup,
 } from "react-bootstrap"
 import { Link, StaticQuery, graphql } from "gatsby"
-import layout from "../../components/layout"
+import Layout from "../../components/layout"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
