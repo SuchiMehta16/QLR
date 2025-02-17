@@ -90,7 +90,9 @@ export default () => (
       <Slider {...settings3} className="testimonial-slider">
         {data &&
           data.allWpCpt368 &&
-          data.allWpCpt368.edges.map(prop => {
+      data.allWpCpt368.edges &&
+      data.allWpCpt368.edges.node &&
+          data.allWpCpt368.edges.node.map(prop => {
             return (
               <div className="slider-data">
                 <Row className="justify-content-center">
