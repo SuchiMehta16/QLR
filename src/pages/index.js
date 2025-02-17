@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Homesection1 from "../components/Home/Homesection1"
 import Homesection2 from "../components/Home/Homesection2"
 import Homesection3 from "../components/Home/Homesection3"

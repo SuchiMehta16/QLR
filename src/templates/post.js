@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 import { Container, Image, Row, Col } from "react-bootstrap"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 //import Footer from "../components/common/Footer"
 export const BlogPostTemplate = ({
   content,

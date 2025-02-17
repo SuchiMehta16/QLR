@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import { Container, Image, Row, Col } from "react-bootstrap"
 import Footer from "../components/common/Footer"
 
