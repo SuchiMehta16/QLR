@@ -32,7 +32,8 @@ export default () => (
         {data &&
           data.allWpCpt121 &&
           data.allWpCpt121.edges &&
-          data.allWpCpt121.edges.map(prop => {
+          data.allWpCpt121.edges.node &&
+          data.allWpCpt121.edges.node.map(prop => {
             return (
               <Col xl={3} lg={3} md={4} sm={12} className="mb-4">
                 <Card className="p-0 border-0 mb-4 md-mb-0">
