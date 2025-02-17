@@ -38,7 +38,8 @@ export default () => (
         {data &&
           data.allWpCpt90 &&
           data.allWpCpt90.edges &&
-          data.allWpCpt90.edges.map(prop => {
+          data.allWpCpt90.edges.node &&
+          data.allWpCpt90.edges.node.map(prop => {
             return (
               <Col xl={6} lg={6} md={12} sm={12} className="lg-mb-4 mb-30">
                 <div className="position-relative">
