@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 const Tag = props => {
   const { data, pageContext } = props
-  const { edges: posts, totalCount } = data.allWordpressPost
+  const { edges: posts, totalCount } = data.allWpPost
   const { title: siteTitle } = data.site.siteMetadata
   const { name: tag } = pageContext
   const title = `${totalCount} post${
