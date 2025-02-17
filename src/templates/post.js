@@ -56,7 +56,7 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
-  const { wordpressPost: post } = data
+  const { wpPost: post } = data
 
   return (
     <Layout>
