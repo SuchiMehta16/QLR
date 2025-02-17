@@ -31,7 +31,7 @@ PageTemplate.propTypes = {
 }
 
 const Page = ({ data }) => {
-  const { wordpressPage: page } = data
+  const { wpPage: page } = data
 
   return (
     <Layout>
