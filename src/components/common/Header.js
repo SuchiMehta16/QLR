@@ -595,13 +595,7 @@ class Header extends Component {
                                                                   <li>
                                                                     <Link
                                                                       to={
-                                                                        "/" +
                                                                         child.url
-                                                                          .toLowerCase()
-                                                                          .replace(
-                                                                            "https://qlresources.com.au/",
-                                                                            ""
-                                                                          )
                                                                       }
                                                                       className="dropdown-item nav-link"
                                                                       role="button"
@@ -625,14 +619,38 @@ class Header extends Component {
                                         ) : (
                                           <>
                                             {prop.parentId == null ? (
-                                              <li className="menu-item">
-                                                <Link
-                                                  className="nav-link"
-                                                  to={prop.url}
-                                                >
-                                                  {prop.label}
-                                                </Link>
-                                              </li>
+                                              <>
+                                                {prop.url.indexOf("http://") ==
+                                                0 ? (
+                                                  <li className="menu-item">
+                                                    <Link
+                                                      className="nav-link"
+                                                      to={
+                                                        "/" +
+                                                        prop.url
+                                                          .toLowerCase()
+                                                          .replace(
+                                                            "http://",
+                                                            ""
+                                                          )
+                                                      }
+                                                    >
+                                                      {prop.label}
+                                                    </Link>
+                                                  </li>
+                                                ) : (
+                                                  <>
+                                                    <li className="menu-item">
+                                                      <Link
+                                                        className="nav-link"
+                                                        to={prop.url}
+                                                      >
+                                                        {prop.label}
+                                                      </Link>
+                                                    </li>
+                                                  </>
+                                                )}
+                                              </>
                                             ) : (
                                               <>
                                                 {/* <li className="menu-item">
