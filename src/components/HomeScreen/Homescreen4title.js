@@ -34,9 +34,8 @@ export default () => (
       <>
         {data &&
           data.allWpCpt516 &&
-          data.allWpCpt516.edges &&
-           data.allWpCpt516.edges.node &&
-          data.allWpCpt516.edges.node.map(prop => {
+          data.allWpCpt516.edges &&           
+          data.allWpCpt516.edges.map(prop => {
             return (
               <div className="title">
                 <h2 className="text-center">{prop.node.acf.title1}</h2>
